@@ -1,0 +1,15 @@
+<Window x:Class="Miteatro.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Mi Teatro · Administración y taquilla" Width="1320" Height="880" MinWidth="1050" MinHeight="760" Background="#F9F7FA" FontFamily="Segoe UI" Language="es-MX" Closing="WindowClosing">
+ <Window.Resources>
+  <Style TargetType="TabItem"><Setter Property="Padding" Value="12,12"/></Style>
+  <Style TargetType="TextBox"><Setter Property="Padding" Value="8"/><Setter Property="Margin" Value="0,5,8,10"/></Style>
+  <Style TargetType="ComboBox"><Setter Property="Padding" Value="8"/><Setter Property="Margin" Value="0,5,8,10"/></Style>
+ </Window.Resources>
+ <DockPanel Margin="24" Background="#F9F7FA">
+  <Grid DockPanel.Dock="Top" Margin="0,0,0,18"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions><StackPanel Orientation="Horizontal"><Image Source="Assets/logo.png" Width="64" Height="64" Margin="0,0,14,0"/><StackPanel><TextBlock Text="MI TEATRO" FontSize="30" FontWeight="Bold" Foreground="#A13CA7"/><TextBlock Text="ENTRADA GENERAL · TAQUILLA Y DULCERÍA" Margin="0,6,0,0" Foreground="#76687D"/></StackPanel></StackPanel><StackPanel x:Name="AccountPanel" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center"/></Grid>
+  <TextBlock x:Name="Status" DockPanel.Dock="Bottom" TextWrapping="Wrap" Margin="0,14,0,0" Foreground="#6C3483"/>
+  <TabControl x:Name="Tabs" Background="White" BorderBrush="#E0D7E5"/>
+ </DockPanel>
+</Window>
+
+
+
